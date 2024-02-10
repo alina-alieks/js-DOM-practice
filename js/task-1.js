@@ -1,10 +1,49 @@
-"use strict"
+// const button = document.querySelector(".my-button");
 
-function makeTransaction(quantity, pricePerDroid) {
-    const totalPrice = quantity * pricePerDroid; 
-    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
-}
+// const handleClick = () => {
+//   console.log("The button was pressed and now the next image will appear");
+// };
+// const removeClick = () => {
+//     console.log("The remote listener");
+// };
 
-console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
-console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
-console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
+// button.addEventListener("click", handleClick);
+//  button.addEventListener("click", removeClick);
+
+// button.removeEventListener("click", removeClick);
+// ___________________
+// const addListenerBtn = document.querySelector('.js-add');
+// const removeListenerBtn = document.querySelector('.js-remove');
+// const btn = document.querySelector(".target-btn");
+
+// const handleClick = () => {
+//  console.log("click event listener callback");
+//  };
+
+// addListenerBtn.addEventListener("click", () => {
+// btn.addEventListener("click", handleClick);
+// console.log("click event listener was added to btn");
+// });
+
+// removeListenerBtn.addEventListener("click", () => {
+//   btn.removeEventListener("click", handleClick);
+//   console.log("click event listener was removed from btn");
+// });
+
+// ___________________________________
+// const button = document.querySelector(".btn");
+
+// const handleClick = (event) => {
+//   console.log("event: ", event);
+//   console.log("event type: ", event.type);
+//   console.log("currentTarget: ", event.currentTarget);
+// };
+
+// button.addEventListener("click", handleClick);
+
+// ____________________________________
+// Властивості key і code
+// document.addEventListener("keydown", event => {
+//   console.log("key: ", event.key);
+//   console.log("code: ", event.code);
+// });

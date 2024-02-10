@@ -1,10 +1,86 @@
-"use strict"
+// // Exe.1.1
+// const clearLogBtn = document.querySelector(".js-clear");
+// const logList = document.querySelector(".log-list");
+// let keypressCounter = 1;
 
-function getShippingMessage(country, price, deliveryFee) {
-    const totalPrice = price + deliveryFee;
-    return `Shipping to ${country} will cost ${totalPrice} credits`;
-}
+// console.log(clearLogBtn)
+// console.log(logList)
 
-console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
-console.log(getShippingMessage("Germany", 80, 20)); // "Shipping to Germany will cost 100 credits"
-console.log(getShippingMessage("Sweden", 100, 20)); // "Shipping to Sweden will cost 120 credits"
+
+// document.addEventListener("keydown", logMessage);
+// document.addEventListener("keyup", logMessage);
+// clearLogBtn.addEventListener("click", reset);
+
+// function logMessage({ type, key, code }) {
+//   const markup = `<div class="log-item">
+//     <span class="chip">${keypressCounter}</span>
+//     <ul>
+//       <li><b>Event</b>: ${type}</li>
+//       <li><b>Key</b>: ${key}</li>
+//       <li><b>Code</b>: ${code}</li>
+//     </ul>
+//   </div>`;
+
+//   logList.insertAdjacentHTML("afterbegin", markup);
+
+//   if (type === "keyup") {
+//     incrementKeypressCounter();
+//   }
+// }
+
+// function reset() {
+//   keypressCounter = 1;
+//   logList.innerHTML = "";
+// }
+
+// function incrementKeypressCounter() {
+//   keypressCounter += 1;
+// }
+
+
+// Exe.1.2
+// const registerForm = document.querySelector(".form");
+// console.log(registerForm)
+
+// registerForm.addEventListener("submit", handleSubmit);
+
+
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const form = event.target;
+//   const login = form.elements.login.value;
+//   const password = form.elements.password.value;
+  
+//   if (login === "" || password === "") {
+//     return console.log("Please fill in all the fields!");
+//   }
+  
+//   console.log(`Login: ${login}, Password: ${password}`);
+//   form.reset();
+// }
+
+// Exe. 1.3
+// const select = document.querySelector(".pizza-select");
+// const textOutput = document.querySelector(".text-output");
+// const valueOutput = document.querySelector(".value-output");
+
+// select.addEventListener("change", setOutput);
+
+// function setOutput(event) {
+//   const selectedOptionValue = event.currentTarget.value;
+//   const selectedOptionIndex = event.currentTarget.selectedIndex;
+//   const selectedOptionText =
+//     event.currentTarget.options[selectedOptionIndex].text;
+
+//   textOutput.textContent = selectedOptionText;
+//     valueOutput.textContent = selectedOptionValue;
+//     console.log(event.currentTarget.selectedIndex)
+// }
+
+// Exe.1.4
+const textInput = document.querySelector(".text-input");
+const output = document.querySelector(".output");
+
+textInput.addEventListener("input", (event) => {
+  output.textContent = event.currentTarget.value;
+});
